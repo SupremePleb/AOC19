@@ -16,7 +16,7 @@
             {
 
                 $sum=0;
-                $product=0;
+                $product=0;   // $sum $product and $i need to be reset!
 
                 $value1=$array[1+$i];
                 $value2=$array[2+$i];
@@ -34,7 +34,7 @@
                     $array[$result]=$product;
                 }
 
-                else if ($array[$i]==19690720)
+                if ($array[0]==19690720)
                 {
                     echo "19690720 found at a:$a and b:$b";
                     echo"<br>";
